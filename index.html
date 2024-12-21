@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to JB-Welds.com">
+    <title>JB-Welds</title>
+
+    <style>
+        /* General reset and box model */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #4e54c8, #8f94fb);
+            color: #fff;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header and Logo */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        header logo.png img {
+            height: 150px;
+            width: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        header .logo img:hover {
+            transform: scale(1.1);
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #f4b400;
+        }
+
+        /* Link with Jellyfin Logo Background */
+        .jellyfin-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #222;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 8px;
+            text-align: center;
+            background-image: url('jellyfin-logo.png'); /* Path to your Jellyfin logo */
+            background-size: 20px 20px; /* Resize logo */
+            background-repeat: no-repeat;
+            background-position: left center; /* Position logo to the left */
+            padding-left: 40px; /* Add padding for the logo to sit properly */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .jellyfin-link:hover {
+            background-color: #f4b400; /* Highlight color on hover */
+            color: #222; /* Change text color on hover */
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            margin: 40px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #f4b400;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: #ccc;
+        }
+
+        .hero .cta-button {
+            padding: 12px 30px;
+            background-color: #f4b400;
+            color: #222;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .hero .cta-button:hover {
+            background-color: #333;
+            color: #fff;
+            transform: translateY(-5px);
+        }
+
+        /* About Section */
+        .about {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            margin: 40px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #f4b400;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+
+        /* Footer */
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #f4b400;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">
+            <a href="/"><img src="logo.png" alt="JB-Welds Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://media.jb-welds.com" target="_blank" class="jellyfin-link">
+                        JB-Fin (Media Server)
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <h1>Welcome to JB-Welds</h1>
+            <p>Your one-stop solution for everything JB-Weld related. Explore our services, products, and media content.</p>
+            <a href="https://media.jb-welds.com" class="cta-button" target="_blank">Explore JB-Fin</a>
+        </section>
+
+        <section class="about">
+            <h2>About JB-Welds</h2>
+            <p>At JB-Welds, we provide high-quality welding and industrial products. Our mission is to deliver top-notch solutions for your welding needs. Explore our products and services below.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 JB-Welds. All rights reserved. | <a href="https://media.jb-welds.com" target="_blank">Visit JB-Fin</a></p>
+    </footer>
+
+</body>
+</html>
